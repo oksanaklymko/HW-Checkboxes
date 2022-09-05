@@ -5,36 +5,60 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/index.css">
-    <title>CSS dinner shopping list</title>
+    <title>Document</title>
 </head>
 <body>
-<header>
-    <div class="header-container">
-        <h1 class="title">CSS Dinner Shopping List</h1>
-        <p class="subtitle">Let’s go to the mall!</p>
-    </div>
-</header>
-<main>
-    <div class="content">
-        <div class="container">
-            <ul>
-                <li><input type="checkbox" id="check1"><label for="check1">A lot of pickles <span>for the next lessons about CSS</span></label>
+<main class="main">
+    <div class="form-holder">
+        <div class="form-title-holder">
+            <h2 class="form-title">CSS Dinner Shopping List</h2>
+            <span class="form-pseudo-title">Let’s go to the mall!</span>
+        </div>
+        <form action="#" class="form-shopping-list">
+            <ul class="shopping-list">
+                <li class="shopping-item">
+                    <input id="pickles" type="checkbox" class="input-checkbox">
+                    <div class="pseudo-checkbox">
+                        <label for="pickles">A lot of pickle <span>(for the next lessons about CSS)</span> </label>
+                    </div>
                 </li>
-                <li><input type="checkbox" id="check2"><label for="check2">10 apples <span>for more CSS manipulations because they are awesome</span></label>
+                <li class="shopping-item">
+                    <input id="apples" type="checkbox" class="input-checkbox">
+                    <div class="pseudo-checkbox">
+                        <label for="apples">10 apples <span>(for more CSS manipulations)</span> </label>
+                    </div>
                 </li>
-                <li><input type="checkbox" id="check3"><label for="check3">20 oranges
-                    <span>because they are awesome</span></label>
+                <li class="shopping-item">
+                    <input id="oranges" type="checkbox" class="input-checkbox">
+                    <div class="pseudo-checkbox">
+                        <label for="oranges">20 oranges <span>(because they are awesome)</span> </label>
+                    </div>
                 </li>
-                <li><input type="checkbox" id="check4"><label for="check4">13 plates
-                    <span>fhm... they always dissapear</span></label>
+                <li class="shopping-item">
+                    <input id="plates" type="checkbox" class="input-checkbox">
+                    <div class="pseudo-checkbox">
+                        <label for="plates">13 plates <span>(hm... they always dissapear)</span> </label>
+                    </div>
                 </li>
-                <li><input type="checkbox" id="check5"><label for="check5">15 bentos</label></li>
-                <li><input type="checkbox" id="check6"><label for="check6">1 bottle of Sake <span>for my friends</span></label>
+                <li class="shopping-item">
+                    <input id="bentos" type="checkbox" class="input-checkbox">
+                    <div class="pseudo-checkbox">
+                        <label for="bentos">15 bentos</label>
+                    </div>
+                </li>
+                <li class="shopping-item">
+                    <input id="pickle" type="checkbox" class="input-checkbox">
+                    <div class="pseudo-checkbox">
+                        <label for="pickle">1 bottle of Sake <span>for my friends</span> </label>
+                    </div>
                 </li>
             </ul>
-            <button type="submit" class="btn">Bon appetit :)</button>
-        </div>
+            <button class="btn" type="submit">Bon appetit :)</button>
+        </form>
     </div>
 </main>
 </body>
